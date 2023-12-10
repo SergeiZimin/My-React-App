@@ -98,7 +98,8 @@ export const InfoAndFilters: React.FC = () => {
       </div>
     </div>
   );
-}; */
+}; 
+*/
 
 
 
