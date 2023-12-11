@@ -10,7 +10,7 @@ interface TableData {
   edit: string;
   remove: string;
 }
-
+/* test2/0*/
 export const Users: React.FC = () => {
   const [tableData, setTableData] = useState<TableData[]>([
     { avatar: 'src/components/layout/infoAndFilters/imginfoAndFilters/Avatar1.jpg', name: 'Deanna Annis', email: 'deannannis@gmail.com', phone: '999-999-9999', address: '475 Spruce Drive, Pittsburgh, PA 123', edit: 'src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg', remove: 'src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg'},
