@@ -1,26 +1,28 @@
+@import url('/src/shared/style/colors.css');
+
 .sidebar-navigation {
   display: flex;
   width: 90px;
   height: 820px;
-  background: #F6FAFDE5;
+  background: var(--gray2);
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid #EAEEF4;
+  border-right: 1px solid var(--gray);
   gap: 10px;
 }
 
 .circle-button {
   width: 50px;
   height: 50px;
-  border: 1px #EAEEF4;
+  border: 1px var(--gray);
   border-radius: 50%;
-  background: #fff;
+  background: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   margin-top: 20px;
-  border: solid 1px #EAEEF4;
+  border: solid 1px var(--gray);
 }
 
 .circle-button img {

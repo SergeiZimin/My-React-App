@@ -12,4 +12,3 @@ export const CircleButton: React.FC<CircleButtonProps> = ({ imgSrc, alt }) => {
     </div>
   );
 };
-

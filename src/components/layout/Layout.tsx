@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Header } from './header/Header';
 import { SidebarNavigation } from './sidebarNavigation/SidebarNavigation';
-import { Users } from '../../pages/users/Users.tsx';
 import './layout.css';
 
 type LayoutProps = {
@@ -13,10 +12,9 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className="layout">
       <Header />
       <div className='layoutContent'>
-      <SidebarNavigation />
-      <Users />
+        <SidebarNavigation />
+        {children}
       </div>
-      {children}
     </div>
   );
 };

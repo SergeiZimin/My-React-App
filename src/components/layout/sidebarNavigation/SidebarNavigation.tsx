@@ -1,4 +1,3 @@
-// SidebarNavigation.tsx
 import React from 'react';
 import './SidebarNavigation.css';
 import {CircleButton} from './CircleButton';
@@ -13,4 +12,3 @@ export const SidebarNavigation: React.FC = () => {
     </div>
   );
 };
-

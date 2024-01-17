@@ -17,3 +17,4 @@ export interface TableDataItem {
     { avatar: 'src/components/layout/infoAndFilters/imginfoAndFilters/Avatar2.jpg', name: 'Andrea Willis', email: 'andreawillis@gmail.com', phone: '999-999-9999', address: '1952 Chicago Avenue, Fresno, PA 935', edit: 'src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg', remove: 'src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg'},
     { avatar: 'src/components/layout/infoAndFilters/imginfoAndFilters/Avatar2.jpg', name: 'Andrea Willis', email: 'andreawillis@gmail.com', phone: '999-999-9999', address: '1952 Chicago Avenue, Fresno, PA 935', edit: 'src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg', remove: 'src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg'},
   ];
+  

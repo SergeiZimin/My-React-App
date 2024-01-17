@@ -15,4 +15,3 @@ export const Button: React.FC<ButtonProps> = ({ className, text, imageSrc, alt }
     </button>
   );
 };
-

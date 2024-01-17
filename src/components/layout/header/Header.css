@@ -1,11 +1,13 @@
+@import url('/src/shared/style/colors.css');
+
 .header {
   width: 100%;
   height: 90px;
   display: flex;
   align-items: center;
-  background: #F6FAFDE5;
+  background: var(--gray2);
   justify-content: space-between;
-  border-bottom: solid 1px #EAEEF4;
+  border-bottom: solid 1px var(--gray);
 }
 
 .parent-logo-container{
@@ -14,7 +16,7 @@
   height: 90px;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid #EAEEF4;
+  border-right: 1px solid var(--gray);
 }
 
 .logo-container {
@@ -22,7 +24,7 @@
   height: 46px;
   align-items: center;
   justify-content: center;
-  background: #092C4C;
+  background: var(--blue);
   border-radius: 4px;
   padding: 13px;
 }
@@ -46,8 +48,8 @@
 .normal-button {
   width: 199px;
   height: 50px;
-  background-color: #514EF3;
-  color: white;
+  background-color: var(--blue2);
+  color: var(--white);
   border: none;
   border-radius: 70px;
   cursor: pointer;
@@ -56,8 +58,8 @@
 .square-button, .avatar-button {
   width: 50px;
   height: 50px;
-  background-color: #EAEEF4;
-  color: #FFFFFF;
+  background-color: var(--gray);
+  color: var(--white);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -79,5 +81,5 @@
 }
 
 .header button:hover {
-  background-color: #211ede;
+  background-color: var(--blue2);
 }

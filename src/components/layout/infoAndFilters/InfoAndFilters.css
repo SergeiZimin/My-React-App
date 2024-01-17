@@ -1,10 +1,12 @@
+@import url('/src/shared/style/colors.css');
+
 .info-and-filters {
   width: calc(100% - 90px);
   height: 820px;
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  background: #F6FAFDE5;
+  background: var(--gray2);
   flex-direction: column;
 }
 
@@ -27,7 +29,7 @@
 }
 
 .info-text {
-  color: #092C4C;
+  color: var(--blue);
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
@@ -48,18 +50,18 @@
   width: 235px;
   height: 50px;
   border-radius: 70px;
-  border: solid 1px #EAEEF4;
+  border: solid 1px var(--gray);
   cursor: pointer;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .button2 {
   width: 116px;
   height: 50px;
   border-radius: 70px;
-  border: solid 1px #EAEEF4;
+  border: solid 1px var(--gray);
   cursor: pointer;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .customers-container {
@@ -88,13 +90,12 @@ table {
   height: 44px;
   object-fit: cover;
   border-radius: 50%;
-  border: solid 1px #EAEEF4;
+  border: solid 1px var(--gray);
   cursor: pointer;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .edit-image {
-  width: 24px;
   height: 24px;
   object-fit: cover;
 }
@@ -104,9 +105,9 @@ table {
   height: 44px;
   object-fit: cover;
   border-radius: 50%;
-  border: solid 1px #EAEEF4;
+  border: solid 1px var(--gray);
   cursor: pointer;
-  background-color: white;
+  background-color: var(--white);
 }
 
 .remove-image {
@@ -116,7 +117,7 @@ table {
 }
 
 th, td {
-  border: 1px solid #EAEEF4;
+  border: 1px solid var(--gray);
   padding: 10px;
   text-align: left;
   border-right: none;
@@ -124,6 +125,6 @@ th, td {
 }
 
 thead {
-  background-color: #F6FAFDE5;
-  color: rgb(11, 0, 0);
+  background-color: var(--gray2);
+  color: var(--black);
 }
