@@ -1,30 +1,39 @@
+// Header.tsx
 import React from 'react';
-import { Button } from './Button';
+import { Button } from '../../Button/Button'; // Поправьте путь в соответствии с вашей структурой проекта
 import { classNames } from '../../../utils/classNames';
 import './Header.css';
 
+type HeaderButton = {
+  variant: 'primary' | 'secondary';
+  className: string;
+  text: string | null;
+  imageSrc: string | null;
+  alt: string | null;
+};
+
 export const Header: React.FC = () => {
-  const buttons = [
+  const headerButtons: HeaderButton[] = [
     {
-      variant: "primary",
-      className: "normal-button",
-      text: "Add New Customer",
+      variant: 'primary',
+      className: 'normal-button',
+      text: 'Add New Customer',
       imageSrc: null,
       alt: null,
     },
     {
-      variant: "secondary",
-      className: "square-button with-image",
+      variant: 'secondary',
+      className: 'square-button with-image',
       text: null,
-      imageSrc: "src/components/layout/header/imgHeader/search-normal.svg",
-      alt: "search-normal.svg",
+      imageSrc: 'src/components/layout/header/imgHeader/search-normal.svg',
+      alt: 'search-normal.svg',
     },
     {
-      variant: "secondary",
-      className: "avatar-button with-image",
+      variant: 'secondary',
+      className: 'avatar-button with-image',
       text: null,
-      imageSrc: "src/components/layout/header/imgHeader/Avatar.png",
-      alt: "Avatar.png",
+      imageSrc: 'src/components/layout/header/imgHeader/Avatar.png',
+      alt: 'Avatar.png',
     },
   ];
 
@@ -36,8 +45,18 @@ export const Header: React.FC = () => {
         </div>
       </div>
       <div className="buttons-container">
-        {buttons.map((button, index) => (
-          <Button key={index} {...button} className={classNames(button.className, button.variant === "primary" ? "primary-button" : "secondary-button")} />
+        {headerButtons.map((button, index) => (
+          <Button
+            key={index}
+            variant={button.variant}
+            className={classNames(
+              button.className,
+              button.variant === 'primary' ? 'normal-variant' : 'square-variant'
+            )}
+            text={button.text || ''}
+            imageSrc={button.imageSrc || ''}
+            alt={button.alt || ''}
+          />
         ))}
       </div>
     </header>
