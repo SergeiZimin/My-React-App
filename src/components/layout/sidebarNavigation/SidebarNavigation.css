@@ -1,0 +1,13 @@
+@import url('/src/shared/style/colors.css');
+
+.sidebar-navigation {
+  flex-shrink: 0;
+  display: flex;
+  width: 90px;
+  height: 820px;
+  background: var(--gray2);
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid var(--gray);
+  gap: 10px;
+}

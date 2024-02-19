@@ -1,0 +1,49 @@
+@import url('/src/shared/style/colors.css');
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background: var(--gray2);
+  justify-content: space-between;
+  border-bottom: solid 1px var(--gray);
+}
+
+.parent-logo-container {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--gray);
+}
+
+.logo-container {
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  border-radius: 4px;
+  padding: 13px;
+}
+
+.logo-png {
+  width: 24px;
+  height: 24px;
+}
+
+.buttons-container {
+  display: flex;
+  height: 90px;
+  gap: 20px;
+  margin-right: 24px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .normal-variant:hover,
+.header .square-variant:hover,
+.header .avatar-variant:hover {
+  background-color: var(--bluePress);
+}

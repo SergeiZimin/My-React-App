@@ -1,0 +1,67 @@
+@import url('/src/shared/style/colors.css');
+
+.info-and-filters {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  background: var(--gray2);
+  flex-direction: column;
+}
+.textAndButtons-container {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-container{
+  display: flex;
+  width: 148px;
+  height: 98px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 24px;
+}
+.info-text {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+.buttons-container{
+  display: flex;
+  width: 371px;
+  height: 98px;
+  gap: 20px;
+  margin-right: 24px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.customers-container {
+  width: 100%;
+  height: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+table {
+  width: calc(100% - 90px);
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--gray);
+  padding: 10px;
+  text-align: left;
+  border-right: none;
+  border-left: none;
+}
+thead {
+  background-color: var(--gray2);
+  color: var(--black);
+}
