@@ -1,6 +1,4 @@
-// Header.tsx
-import React from 'react';
-import { Button } from '../../Button/Button'; // Поправьте путь в соответствии с вашей структурой проекта
+import { Button } from '../../Button/Button';
 import { classNames } from '../../../utils/classNames';
 import './Header.css';
 
@@ -13,11 +11,12 @@ type HeaderButton = {
 };
 
 export const Header: React.FC = () => {
+
   const headerButtons: HeaderButton[] = [
     {
       variant: 'primary',
       className: 'normal-button',
-      text: 'Add New Customer',
+      text: '',
       imageSrc: null,
       alt: null,
     },
