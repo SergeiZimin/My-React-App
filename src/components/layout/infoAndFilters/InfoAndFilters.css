@@ -18,10 +18,10 @@
 }
 .text-container{
   display: flex;
-  width: 148px;
+  width: 350px;
   height: 98px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: 24px;
 }
 .info-text {

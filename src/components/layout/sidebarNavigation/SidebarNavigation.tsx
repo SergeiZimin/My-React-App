@@ -16,7 +16,6 @@ export const SidebarNavigation: React.FC = () => {
           className={classNames('circle-button')}
           variant={'circle'}
         >
-          {null}
         </Button>
       ))}
     </div>

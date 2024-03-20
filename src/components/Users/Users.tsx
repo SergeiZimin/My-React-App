@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Button } from '../../components/Button/Button';
+import { Button } from '../Button/Button';
+import { Modal } from '../Modal/Modal';
 import { initialTableData, TableDataItem } from './CustomersData';
 import '../../components/layout/infoAndFilters/InfoAndFilters.css';
 import { classNames } from '../../utils/classNames';
@@ -7,6 +8,11 @@ import { classNames } from '../../utils/classNames';
 export const Users: React.FC = () => {
   const [tableData, setTableData] = useState<TableDataItem[]>(initialTableData);
 
+  const [isAddCustomerModalOpen, setAddCustomerOpen] = useState (false);
+
+  const openAddCustomerModal = () => setAddCustomerOpen(true);
+  const closeAddCustomerModal = () => setAddCustomerOpen(false);
+  
   const handleEditClick = (index: number) => {
     setTableData((prevTableData) => {
       return prevTableData.map((data, dataIndex) => {
@@ -27,11 +33,25 @@ export const Users: React.FC = () => {
     });
   };
 
+  const handleSaveUser = (userData: TableDataItem) => {
+    setTableData((prevTableData) => [...prevTableData, userData]);
+    closeAddCustomerModal();
+  };
+
   return (
     <div className={classNames('info-and-filters')}>
       <div className={classNames('textAndButtons-container')}>
         <div className={classNames('text-container')}>
           <div className={classNames('info-text')}>Total: {tableData.length} customers</div>
+          <Button
+            variant='primary'
+            text='Add New Customer'
+            imageSrc=''
+            alt=''
+            onClick={() => {
+                openAddCustomerModal();
+            }}
+         />
         </div>
         <div className={classNames('buttons-container')}>
           <button className={classNames('button1')}>Sort by: Date Created</button>
@@ -58,10 +78,10 @@ export const Users: React.FC = () => {
                 <td>
                   <img src={data.avatar} alt={`Avatar ${index + 1}`} className={classNames('avatar-image')} />
                 </td>
-                <td>{data.name}</td>
+                <td>{data.firstName} {data.lastName}</td>
                 <td>{data.email}</td>
                 <td>{data.phone}</td>
-                <td>{data.address}</td>
+                <td>{data.streetAddress}, {data.city}, {data.state}, {data.zipCode}</td>
                 <td>
                   <Button
                     className={classNames('edit-button')}
@@ -87,6 +107,13 @@ export const Users: React.FC = () => {
           </tbody>
         </table>
       </div>
+      <Modal 
+        isOpen={isAddCustomerModalOpen}
+        onClose={closeAddCustomerModal}
+        onSaveUser={handleSaveUser}
+        variant='addCustomer'>
+            <h2>Add New Customer</h2>
+      </Modal>
     </div>
   );
 };
