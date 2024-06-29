@@ -1,20 +1,19 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { Header } from './header/Header';
 import { SidebarNavigation } from './sidebarNavigation/SidebarNavigation';
 import './layout.css';
+import { Outlet } from 'react-router-dom';
 
-type LayoutProps = {
-  children: ReactNode;
-};
+type LayoutProps = object;
 
-export const Layout: React.FC<LayoutProps> = ({ children }) => {
+export const Layout: React.FC<LayoutProps> = () => {
   return (
     <div className="layout">
       <Header />
       <div className='layoutContent'>
-        <SidebarNavigation />
-        {children}
+        <SidebarNavigation />  
+        <Outlet/>
+        </div>
       </div>
-    </div>
   );
 };

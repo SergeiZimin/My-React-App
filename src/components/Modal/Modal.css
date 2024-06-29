@@ -118,6 +118,7 @@ justify-content: space-between;
   border: solid 1px var(--gray);
   justify-content: center;
   background-color: var(--gray2);
+  padding-left: 10px;
 }
 
 .last-name-container{
@@ -137,6 +138,7 @@ justify-content: space-between;
   border: solid 1px var(--gray);
   justify-content: center;
   background-color: var(--gray2);
+  padding-left: 10px;
 }
 
 .customer-contact-data-container{
@@ -164,6 +166,7 @@ justify-content: space-between;
   border: solid 1px var(--gray);
   justify-content: center;
   background-color: var(--gray2);
+  padding-left: 10px;
 }
 
 .phone-container{
@@ -183,6 +186,7 @@ justify-content: space-between;
   border: solid 1px var(--gray);
   justify-content: center;
   background-color: var(--gray2);
+  padding-left: 10px;
 }
 
 .address-container{
@@ -201,6 +205,7 @@ justify-content: space-between;
   border-radius: 8px;
   border: solid 1px var(--gray);
   background-color: var(--gray2);
+  padding-left: 10px;
 
 }
 
@@ -218,6 +223,7 @@ justify-content: space-between;
   border-radius: 8px;
   border: solid 1px var(--gray);
   background-color: var(--gray2);
+  padding-left: 10px;
 }
 
 .state-input{
@@ -227,6 +233,7 @@ justify-content: space-between;
   border-radius: 8px;
   border: solid 1px var(--gray);
   background-color: var(--gray2);
+  padding-left: 10px;
 }
 
 .code-input{
@@ -236,6 +243,7 @@ justify-content: space-between;
   border-radius: 8px;
   border: solid 1px var(--gray);
   background-color: var(--gray2);
+  padding-left: 10px;
 }
 
 .actions-container{

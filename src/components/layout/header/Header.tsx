@@ -1,6 +1,7 @@
 import { Button } from '../../Button/Button';
 import { classNames } from '../../../utils/classNames';
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 type HeaderButton = {
   variant: 'primary' | 'secondary';
@@ -12,14 +13,13 @@ type HeaderButton = {
 
 export const Header: React.FC = () => {
 
+  const handleDashboardButtonClic=()=>{
+    return(
+      <Link to='/Dashboard'></Link>
+    )
+  };
+
   const headerButtons: HeaderButton[] = [
-    {
-      variant: 'primary',
-      className: 'normal-button',
-      text: '',
-      imageSrc: null,
-      alt: null,
-    },
     {
       variant: 'secondary',
       className: 'square-button with-image',
@@ -55,6 +55,7 @@ export const Header: React.FC = () => {
             text={button.text || ''}
             imageSrc={button.imageSrc || ''}
             alt={button.alt || ''}
+            onClick={handleDashboardButtonClic}
           />
         ))}
       </div>

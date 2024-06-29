@@ -14,8 +14,9 @@ type ModalProps = {
 };
 
 export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, variant, onSaveUser }) => {
-  
-  const [formData, setFormData] = useState <Partial <TableDataItem>> ({
+
+  const [formData, setFormData] = useState <TableDataItem> ({
+    id: '',
     avatar: '',
     firstName: '',
     lastName: '',
@@ -31,6 +32,7 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, variant
 
   const resetForm = () => {
     setFormData({
+      id: '',
       avatar: '',
       firstName: '',
       lastName: '',
