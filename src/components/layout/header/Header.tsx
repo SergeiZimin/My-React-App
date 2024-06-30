@@ -1,6 +1,8 @@
 import { Button } from '../../Button/Button';
 import { classNames } from '../../../utils/classNames';
 import './Header.css';
+import avatarImage from './imgHeader/Avatar.png'; 
+import searchNormalImage from './imgHeader/searchNormal.svg';
 import { Link } from 'react-router-dom';
 
 type HeaderButton = {
@@ -24,14 +26,14 @@ export const Header: React.FC = () => {
       variant: 'secondary',
       className: 'square-button with-image',
       text: null,
-      imageSrc: 'src/components/layout/header/imgHeader/search-normal.svg',
+      imageSrc: searchNormalImage,
       alt: 'search-normal.svg',
     },
     {
       variant: 'secondary',
       className: 'avatar-button with-image',
       text: null,
-      imageSrc: 'src/components/layout/header/imgHeader/Avatar.png',
+      imageSrc: avatarImage,
       alt: 'Avatar.png',
     },
   ];
@@ -40,7 +42,7 @@ export const Header: React.FC = () => {
     <header className="header">
       <div className="parent-logo-container">
         <div className="logo-container">
-          <img src="src/components/layout/header/imgHeader/blur.svg" alt="blur.svg" />
+          <img src="./imgHeader/blur.svg" alt="blur.svg" />
         </div>
       </div>
       <div className="buttons-container">

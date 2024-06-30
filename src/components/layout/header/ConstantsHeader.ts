@@ -1,3 +1,6 @@
+import avatarImage from './imgHeader/Avatar.png'; 
+import searchNormalImage from './imgHeader/searchNormal.svg';
+
 export const headerButtons = [
     {
       className: "normal-button",
@@ -8,13 +11,13 @@ export const headerButtons = [
     {
       className: "square-button with-image",
       text: null,
-      imageSrc: "src/components/layout/header/imgHeader/search-normal.svg",
+      imageSrc: searchNormalImage,
       alt: "search-normal.svg",
     },
     {
       className: "avatar-button with-image",
       text: null,
-      imageSrc: "src/components/layout/header/imgHeader/Avatar.png",
+      imageSrc: avatarImage,
       alt: "Avatar.png",
     },
   ];

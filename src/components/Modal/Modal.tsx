@@ -4,6 +4,8 @@ import { createPortal } from 'react-dom';
 import './Modal.css';
 import { Button } from '../Button/Button';
 import { classNames } from '../../utils/classNames';
+import edit2Image from './imginfoAndFilters/edit2.svg';
+import trashImage from './imginfoAndFilters/trash.svg';
 
 type ModalProps = {
   isOpen: boolean;
@@ -16,6 +18,7 @@ type ModalProps = {
 export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, variant, onSaveUser }) => {
   
   const [formData, setFormData] = useState <Partial <TableDataItem>> ({
+    id: '',
     avatar: '',
     firstName: '',
     lastName: '',
@@ -25,12 +28,13 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, variant
     city: '',
     state: '',
     zipCode: '',
-    edit: 'src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg',
-    remove: 'src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg'
+    edit: edit2Image,
+    remove: trashImage
   }); 
 
   const resetForm = () => {
     setFormData({
+      id: '',
       avatar: '',
       firstName: '',
       lastName: '',
@@ -40,8 +44,8 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, variant
       city: '',
       state: '',
       zipCode: '',
-      edit: 'src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg',
-      remove: 'src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg'
+      edit: edit2Image,
+      remove: trashImage
     });
   };
 

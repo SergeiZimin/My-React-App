@@ -11,7 +11,7 @@
       "city": "Fresno",
       "state": "PA",
       "zipCode": "935",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     },
     {
@@ -25,7 +25,7 @@
       "city": "Fresno",
       "state": "PA",
       "zipCode": "935",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     },
     {
@@ -39,7 +39,7 @@
       "city": "Fresno",
       "state": "PA",
       "zipCode": "935",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     },
     {
@@ -53,7 +53,7 @@
       "city": "Fresno",
       "state": "PA",
       "zipCode": "935",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     },
     {
@@ -67,7 +67,7 @@
       "city": "Belgrade",
       "state": "Example",
       "zipCode": "1100",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     },
     {
@@ -81,7 +81,7 @@
       "city": "Test",
       "state": "Test",
       "zipCode": "123",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     },
     {
@@ -95,7 +95,7 @@
       "city": "Test1",
       "state": "Test1",
       "zipCode": "123",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     },
     {
@@ -109,7 +109,7 @@
       "city": "Test2",
       "state": "Test",
       "zipCode": "123",
-      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit-2.svg",
+      "edit": "src/components/layout/infoAndFilters/imginfoAndFilters/edit2.svg",
       "remove": "src/components/layout/infoAndFilters/imginfoAndFilters/trash.svg"
     }
   ]
